@@ -1,0 +1,20 @@
+id: login_smoke
+name: Login smoke (the-internet)
+base_url: https://the-internet.herokuapp.com/login
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/login
+  - action: fill
+    target: username
+    name: username
+    id: username
+    value: tomsmith
+  - action: fill
+    target: password
+    name: password
+    id: password
+    value: SuperSecretPassword!
+  - action: click
+    target: login
+    text: Login
+    role: button
