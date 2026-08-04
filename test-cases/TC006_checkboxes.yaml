@@ -1,0 +1,27 @@
+id: TC006_checkboxes
+name: Navigate checkboxes and related pages
+base_url: https://the-internet.herokuapp.com/checkboxes
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/checkboxes
+  - action: assert
+    target: heading
+    text: Checkboxes
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: checkboxes_link
+    text: Checkboxes
+    role: link
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: dropdown_link
+    text: Dropdown
+    role: link
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: inputs_link
+    text: Inputs
+    role: link

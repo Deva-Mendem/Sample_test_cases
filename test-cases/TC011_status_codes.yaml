@@ -1,0 +1,25 @@
+id: TC011_status_codes
+name: Status code links navigation
+base_url: https://the-internet.herokuapp.com/status_codes
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/status_codes
+  - action: assert
+    target: heading
+    text: Status Codes
+  - action: click
+    target: code_200
+    text: "200"
+    role: link
+  - action: navigate
+    url: https://the-internet.herokuapp.com/status_codes
+  - action: click
+    target: code_404
+    text: "404"
+    role: link
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: status_codes_link
+    text: Status Codes
+    role: link

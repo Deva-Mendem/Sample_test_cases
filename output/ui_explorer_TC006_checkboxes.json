@@ -1,0 +1,162 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC006_checkboxes",
+  "goal": "Navigate checkboxes and related pages",
+  "base_url": "https://the-internet.herokuapp.com/checkboxes",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:04:31.116482",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/checkboxes",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Checkboxes",
+      "page_url": "https://the-internet.herokuapp.com/checkboxes",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 4,
+      "action": "click",
+      "target": "checkboxes_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Checkboxes"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Checkboxes",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Checkboxes",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/checkboxes']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Checkboxes']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 5,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 6,
+      "action": "click",
+      "target": "dropdown_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Dropdown"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Dropdown",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Dropdown",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/dropdown']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Dropdown']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 7,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 8,
+      "action": "click",
+      "target": "inputs_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Inputs"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Inputs",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Inputs",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/inputs']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Inputs']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

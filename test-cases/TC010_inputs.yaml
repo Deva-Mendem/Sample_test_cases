@@ -1,0 +1,26 @@
+id: TC010_inputs
+name: Number input and home navigation
+base_url: https://the-internet.herokuapp.com/inputs
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/inputs
+  - action: assert
+    target: heading
+    text: Inputs
+  - action: navigate
+    url: https://the-internet.herokuapp.com/forgot_password
+  - action: fill
+    target: email
+    name: email
+    id: email
+    value: inputs-demo@example.com
+  - action: click
+    target: retrieve
+    text: Retrieve password
+    role: button
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: inputs_link
+    text: Inputs
+    role: link

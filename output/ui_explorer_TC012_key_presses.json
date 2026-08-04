@@ -1,0 +1,150 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC012_key_presses",
+  "goal": "Key presses input page",
+  "base_url": "https://the-internet.herokuapp.com/key_presses",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:06:03.030153",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/key_presses",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Key Presses",
+      "page_url": "https://the-internet.herokuapp.com/key_presses",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "fill",
+      "target": "target",
+      "element": {
+        "tag": "input",
+        "type": "input"
+      },
+      "locator": {
+        "strategy": "attribute",
+        "value": "input[type='text']",
+        "unique": true
+      },
+      "value": "A",
+      "locator_alternatives": [
+        {
+          "strategy": "css",
+          "value": "#target",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//input[@id='target']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_absolute",
+          "value": "//input[@id='target']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 4,
+      "action": "fill",
+      "target": "target",
+      "element": {
+        "tag": "input",
+        "type": "input"
+      },
+      "locator": {
+        "strategy": "attribute",
+        "value": "input[type='text']",
+        "unique": true
+      },
+      "value": "B",
+      "locator_alternatives": [
+        {
+          "strategy": "css",
+          "value": "#target",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//input[@id='target']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_absolute",
+          "value": "//input[@id='target']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 5,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 6,
+      "action": "click",
+      "target": "key_presses_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Key Presses"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Key Presses",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Key Presses",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/key_presses']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Key Presses']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

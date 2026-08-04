@@ -1,0 +1,25 @@
+id: TC007_dropdown
+name: Select dropdown options
+base_url: https://the-internet.herokuapp.com/dropdown
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/dropdown
+  - action: assert
+    target: heading
+    text: Dropdown List
+  - action: select
+    target: dropdown
+    id: dropdown
+    name: dropdown
+    value: "1"
+  - action: select
+    target: dropdown
+    id: dropdown
+    name: dropdown
+    value: "2"
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: dropdown_link
+    text: Dropdown
+    role: link

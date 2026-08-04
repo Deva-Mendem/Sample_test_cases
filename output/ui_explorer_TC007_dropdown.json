@@ -1,0 +1,152 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC007_dropdown",
+  "goal": "Select dropdown options",
+  "base_url": "https://the-internet.herokuapp.com/dropdown",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:04:44.491657",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/dropdown",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Dropdown List",
+      "page_url": "https://the-internet.herokuapp.com/dropdown",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "select",
+      "target": "dropdown",
+      "element": {
+        "tag": "select",
+        "type": "select",
+        "text": "Please select an option\nOption 1\nOption 2"
+      },
+      "locator": {
+        "strategy": "text",
+        "value": "Please select an option\nOption 1\nOption 2",
+        "unique": true
+      },
+      "value": "1",
+      "locator_alternatives": [
+        {
+          "strategy": "css",
+          "value": "#dropdown",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//select[@id='dropdown']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_absolute",
+          "value": "//select[@id='dropdown']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 4,
+      "action": "select",
+      "target": "dropdown",
+      "element": {
+        "tag": "select",
+        "type": "select",
+        "text": "Please select an option\nOption 1\nOption 2"
+      },
+      "locator": {
+        "strategy": "text",
+        "value": "Please select an option\nOption 1\nOption 2",
+        "unique": true
+      },
+      "value": "2",
+      "locator_alternatives": [
+        {
+          "strategy": "css",
+          "value": "#dropdown",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//select[@id='dropdown']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_absolute",
+          "value": "//select[@id='dropdown']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 5,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 6,
+      "action": "click",
+      "target": "dropdown_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Dropdown"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Dropdown",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Dropdown",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/dropdown']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Dropdown']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

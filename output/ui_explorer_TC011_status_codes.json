@@ -1,0 +1,156 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC011_status_codes",
+  "goal": "Status code links navigation",
+  "base_url": "https://the-internet.herokuapp.com/status_codes",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:05:49.675625",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/status_codes",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Status Codes",
+      "page_url": "https://the-internet.herokuapp.com/status_codes",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "click",
+      "target": "code_200",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "200"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=200",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "200",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='status_codes/200']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='200']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 4,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/status_codes",
+      "status": "ok"
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "target": "code_404",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "404"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=404",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "404",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='status_codes/404']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='404']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 6,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "target": "status_codes_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Status Codes"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Status Codes",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Status Codes",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/status_codes']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Status Codes']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

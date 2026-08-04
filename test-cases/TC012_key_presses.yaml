@@ -1,0 +1,24 @@
+id: TC012_key_presses
+name: Key presses input page
+base_url: https://the-internet.herokuapp.com/key_presses
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/key_presses
+  - action: assert
+    target: heading
+    text: Key Presses
+  - action: fill
+    target: target
+    id: target
+    name: q
+    value: A
+  - action: fill
+    target: target
+    id: target
+    value: B
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: key_presses_link
+    text: Key Presses
+    role: link

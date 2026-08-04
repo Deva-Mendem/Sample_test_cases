@@ -1,0 +1,156 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC008_add_remove_elements",
+  "goal": "Add and remove dynamic elements",
+  "base_url": "https://the-internet.herokuapp.com/add_remove_elements/",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:05:04.591544",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Add/Remove Elements",
+      "page_url": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "click",
+      "target": "add_element",
+      "element": {
+        "tag": "button",
+        "type": "button",
+        "text": "Add Element"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=button|name=Add Element",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Add Element",
+          "unique": true
+        },
+        {
+          "strategy": "css",
+          "value": "button",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//button[normalize-space()='Add Element']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 4,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "target": "add_remove_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Add/Remove Elements"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Add/Remove Elements",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Add/Remove Elements",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/add_remove_elements/']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Add/Remove Elements']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 6,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "status": "ok"
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "target": "add_element_again",
+      "element": {
+        "tag": "button",
+        "type": "button",
+        "text": "Add Element"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=button|name=Add Element",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Add Element",
+          "unique": true
+        },
+        {
+          "strategy": "css",
+          "value": "button",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//button[normalize-space()='Add Element']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

@@ -1,0 +1,25 @@
+id: TC008_add_remove_elements
+name: Add and remove dynamic elements
+base_url: https://the-internet.herokuapp.com/add_remove_elements/
+steps:
+  - action: navigate
+    url: https://the-internet.herokuapp.com/add_remove_elements/
+  - action: assert
+    target: heading
+    text: Add/Remove Elements
+  - action: click
+    target: add_element
+    text: Add Element
+    role: button
+  - action: navigate
+    url: https://the-internet.herokuapp.com/
+  - action: click
+    target: add_remove_link
+    text: Add/Remove Elements
+    role: link
+  - action: navigate
+    url: https://the-internet.herokuapp.com/add_remove_elements/
+  - action: click
+    target: add_element_again
+    text: Add Element
+    role: button

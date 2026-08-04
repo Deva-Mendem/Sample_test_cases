@@ -1,0 +1,190 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "login_smoke",
+  "goal": "Login smoke (the-internet)",
+  "base_url": "https://the-internet.herokuapp.com/login",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:07:54.352019",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 4,
+  "locators_verified": 5,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/login",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "page",
+      "expected_text": "Login Page",
+      "page_url": "https://the-internet.herokuapp.com/login",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "fill",
+      "target": "username",
+      "element": {
+        "tag": "input",
+        "type": "input",
+        "label": "Username"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=textbox|name=Username",
+        "unique": true
+      },
+      "value": "${APP_USERNAME}",
+      "locator_alternatives": [
+        {
+          "strategy": "label",
+          "value": "Username",
+          "unique": true
+        },
+        {
+          "strategy": "name",
+          "value": "username",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "input[type='text']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false,
+      "value_redacted": true
+    },
+    {
+      "step": 4,
+      "action": "fill",
+      "target": "password",
+      "element": {
+        "tag": "input",
+        "type": "input",
+        "label": "Password"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=textbox|name=Password",
+        "unique": true
+      },
+      "value": "${APP_PASSWORD}",
+      "locator_alternatives": [
+        {
+          "strategy": "label",
+          "value": "Password",
+          "unique": true
+        },
+        {
+          "strategy": "name",
+          "value": "password",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "input[type='password']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false,
+      "value_redacted": true
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "target": "login",
+      "element": {
+        "tag": "button",
+        "type": "button",
+        "text": "Login"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=button|name=Login",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Login",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "button[type='submit']",
+          "unique": true
+        },
+        {
+          "strategy": "css",
+          "value": "button.radius",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 6,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "target": "form_auth_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Form Authentication"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Form Authentication",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Form Authentication",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/login']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Form Authentication']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}

@@ -1,0 +1,158 @@
+{
+  "agent": "ui_explorer",
+  "phase": "explore",
+  "mode": "discover",
+  "test_case_id": "TC010_inputs",
+  "goal": "Number input and home navigation",
+  "base_url": "https://the-internet.herokuapp.com/inputs",
+  "site": "opencart",
+  "generated_at": "2026-08-04T19:05:35.797238",
+  "browser_backend": "playwright",
+  "status": "completed",
+  "locators_found": 3,
+  "locators_verified": 4,
+  "steps_executed": 0,
+  "steps_unmatched": 0,
+  "steps": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/inputs",
+      "status": "ok"
+    },
+    {
+      "step": 2,
+      "action": "assert",
+      "target": "heading",
+      "expected_text": "Inputs",
+      "page_url": "https://the-internet.herokuapp.com/inputs",
+      "executed": false,
+      "verified": true,
+      "url_matched": true,
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/forgot_password",
+      "status": "ok"
+    },
+    {
+      "step": 4,
+      "action": "fill",
+      "target": "email",
+      "element": {
+        "tag": "input",
+        "type": "input",
+        "label": "E-mail"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=textbox|name=E-mail",
+        "unique": true
+      },
+      "value": "${APP_USERNAME}",
+      "locator_alternatives": [
+        {
+          "strategy": "label",
+          "value": "E-mail",
+          "unique": true
+        },
+        {
+          "strategy": "name",
+          "value": "email",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "input[type='text']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false,
+      "value_redacted": true
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "target": "retrieve",
+      "element": {
+        "tag": "button",
+        "type": "button",
+        "text": "Retrieve password"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=button|name=Retrieve password",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Retrieve password",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "button[type='submit']",
+          "unique": true
+        },
+        {
+          "strategy": "css",
+          "value": "#form_submit",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    },
+    {
+      "step": 6,
+      "action": "navigate",
+      "url": "https://the-internet.herokuapp.com/",
+      "status": "ok"
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "target": "inputs_link",
+      "element": {
+        "tag": "a",
+        "type": "link",
+        "text": "Inputs"
+      },
+      "locator": {
+        "strategy": "role",
+        "value": "role=link|name=Inputs",
+        "unique": true
+      },
+      "locator_alternatives": [
+        {
+          "strategy": "text",
+          "value": "Inputs",
+          "unique": true
+        },
+        {
+          "strategy": "attribute",
+          "value": "a[href='/inputs']",
+          "unique": true
+        },
+        {
+          "strategy": "xpath_relative",
+          "value": ".//a[normalize-space()='Inputs']",
+          "unique": true
+        }
+      ],
+      "verified": true,
+      "locator_unique": true,
+      "locator_count": 1,
+      "executed": false
+    }
+  ],
+  "llm_recovery_used": false
+}
