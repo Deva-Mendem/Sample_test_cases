@@ -1,0 +1,10 @@
+# Local auth / reports / node_modules — never commit secrets or run artifacts
+.auth/
+node_modules/
+playwright-report/
+test-results/
+.env
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
