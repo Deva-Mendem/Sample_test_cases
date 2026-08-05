@@ -4,12 +4,13 @@
  * Generated at: 2026-08-04T19:04:31.116482
  * Do not hand-edit - re-run: python main.py --phase generate
  *
+ * Enrichment tag: @enriched
  * Open this file in Cursor/VS Code as TypeScript.
  * On Windows, Explorer may open .ts in Windows Media Player (blank); that is an OS association, not an empty file.
  */
 import { test, expect } from '@playwright/test';
 
-test("Navigate checkboxes and related pages", async ({ page }) => {
+test("Navigate checkboxes and related pages", { tag: ["@enriched", "@the_internet"] }, async ({ page }) => {
   // Step 1: navigate
   await page.goto("https://the-internet.herokuapp.com/checkboxes");
   // Step 2: assert text

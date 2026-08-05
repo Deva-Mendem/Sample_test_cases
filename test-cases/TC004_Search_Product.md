@@ -4,6 +4,11 @@ TC004
 ## Title
 Search a Product
 
+## Tags
+- enrichme
+- opencart
+- search
+
 ## Description
 Search for a product on OpenCart and verify matching results are returned.
 

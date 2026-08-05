@@ -4,12 +4,13 @@
  * Generated at: 2026-08-04T19:06:03.030153
  * Do not hand-edit - re-run: python main.py --phase generate
  *
+ * Enrichment tag: @enriched
  * Open this file in Cursor/VS Code as TypeScript.
  * On Windows, Explorer may open .ts in Windows Media Player (blank); that is an OS association, not an empty file.
  */
 import { test, expect } from '@playwright/test';
 
-test("Key presses input page", async ({ page }) => {
+test("Key presses input page", { tag: ["@enriched", "@the_internet"] }, async ({ page }) => {
   // Step 1: navigate
   await page.goto("https://the-internet.herokuapp.com/key_presses");
   // Step 2: assert text

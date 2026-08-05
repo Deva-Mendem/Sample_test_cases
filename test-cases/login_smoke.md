@@ -4,6 +4,11 @@ login_smoke
 ## Title
 Login smoke (the-internet)
 
+## Tags
+- enriched
+- the-internet
+- login
+
 ## Description
 Simple login smoke test against https://the-internet.herokuapp.com/login — public demo page with known credentials.
 

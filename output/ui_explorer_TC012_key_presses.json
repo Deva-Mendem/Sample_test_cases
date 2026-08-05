@@ -146,5 +146,10 @@
       "executed": false
     }
   ],
-  "llm_recovery_used": false
+  "llm_recovery_used": false,
+  "enrichment_tag": "enriched",
+  "tags": [
+    "enriched",
+    "the_internet"
+  ]
 }

@@ -1,6 +1,9 @@
 id: TC012_key_presses
 name: Key presses input page
 base_url: https://the-internet.herokuapp.com/key_presses
+tags:
+  - enriched
+  - the-internet
 steps:
   - action: navigate
     url: https://the-internet.herokuapp.com/key_presses

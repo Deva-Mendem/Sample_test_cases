@@ -4,6 +4,11 @@ TC003
 ## Title
 Wishlist a Product
 
+## Tags
+- enrichme
+- opencart
+- wishlist
+
 ## Description
 Search for a product on OpenCart, add it to the wish list, open the wish list, and verify the product is listed.
 

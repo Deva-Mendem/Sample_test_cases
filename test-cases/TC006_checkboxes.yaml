@@ -1,6 +1,9 @@
 id: TC006_checkboxes
 name: Navigate checkboxes and related pages
 base_url: https://the-internet.herokuapp.com/checkboxes
+tags:
+  - enriched
+  - the-internet
 steps:
   - action: navigate
     url: https://the-internet.herokuapp.com/checkboxes

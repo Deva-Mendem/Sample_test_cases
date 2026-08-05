@@ -4,6 +4,11 @@ TC002
 ## Title
 Add Product To Cart
 
+## Tags
+- enrichme
+- opencart
+- cart
+
 ## Description
 Search for a product on OpenCart, open the product page, add it to the shopping cart, and verify the cart contents.
 

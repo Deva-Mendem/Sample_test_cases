@@ -4,6 +4,11 @@ TC001
 ## Title
 User Login with Valid Credentials
 
+## Tags
+- enrichme
+- opencart
+- login
+
 ## Description
 Log into OpenCart with a valid email and password, then verify the account page is shown.
 

@@ -1,6 +1,9 @@
 id: TC007_dropdown
 name: Select dropdown options
 base_url: https://the-internet.herokuapp.com/dropdown
+tags:
+  - enriched
+  - the-internet
 steps:
   - action: navigate
     url: https://the-internet.herokuapp.com/dropdown
